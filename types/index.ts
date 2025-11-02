@@ -28,3 +28,36 @@ export interface CartStore {
   decreaseQuantity: (id: string | number) => void
   clearCart: () => void
 }
+
+export interface ShippingAddress {
+  firstName: string
+  lastName: string
+  email: string
+  phone: string
+  address: string
+  city: string
+  state: string
+  zipCode: string
+  country: string
+}
+
+export interface PaymentMethod {
+  type: 'cod' | 'bKash' | 'nagad'
+  details?: {
+    phone?: string
+    transactionId?: string
+  }
+}
+
+export interface Order {
+  id: string
+  items: CartItem[]
+  shippingAddress: ShippingAddress
+  paymentMethod: PaymentMethod
+  subtotal: number
+  shipping: number
+  tax: number
+  total: number
+  status: 'pending' | 'confirmed' | 'shipped' | 'delivered'
+  createdAt: Date
+}
