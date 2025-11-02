@@ -46,7 +46,7 @@ A modern, responsive furniture e-commerce platform built with Next.js 15, featur
 
 | Checkout | Order Success | Mobile View |
 |----------|---------------|-------------|
-| ![Checkout](https://via.placeholder.com/400x250/2B303A/FFFFFF?text=Checkout) | ![Success](https://i.ibb.co.com/HpK14HcP/kosii-success.png) | ![Mobile](https://i.ibb.co.com/d0sVCsmb/kosii-mobile.png) |
+| ![Checkout](https://i.ibb.co.com/kV1KfsS8/kosii-checkout.png) | ![Success](https://i.ibb.co.com/KjjfTGtg/kosii-success.png) | ![Mobile](https://i.ibb.co.com/PGGTNSTY/kosii-mobile.png) |
 
 ## 🛠️ Tech Stack
 
@@ -79,26 +79,34 @@ A modern, responsive furniture e-commerce platform built with Next.js 15, featur
    ```bash
    git clone https://github.com/your-username/kosi-furniture.git
    cd kosi-furniture
-Install dependencies
+   ```
 
-bash
-pnpm install
-Run the development server
+2. **Install dependencies**
+   ```bash
+   pnpm install
+   ```
 
-bash
-pnpm dev
-Open your browser
-Navigate to http://localhost:3000
+3. **Run the development server**
+   ```bash
+   pnpm dev
+   ```
 
-Build for Production
-bash
+4. **Open your browser**
+   Navigate to `http://localhost:3000`
+
+### Build for Production
+
+```bash
 # Build the application
 pnpm build
 
 # Start production server
 pnpm start
-🏗️ Project Structure
-text
+```
+
+## 🗂️ Project Structure
+
+```
 kosi-furniture/
 ├── app/                    # Next.js 15 App Router
 │   ├── cart/              # Cart page
@@ -115,138 +123,118 @@ kosi-furniture/
 │   └── mock-data.ts       # Sample product data
 ├── public/                # Static assets
 └── types/                 # TypeScript type definitions
-🎯 Key Pages & Features
-🏠 Homepage
-Hero section with featured products
+```
 
-Top picks with filtering and sorting
+## 🎯 Key Pages & Features
 
-New arrivals showcase
+### 🏠 Homepage
+- Hero section with featured products
+- Top picks with filtering and sorting
+- New arrivals showcase
+- Feature highlights
+- Inspiration gallery
 
-Feature highlights
+### 🛒 Shopping Experience
+- **Product Catalog** - Grid/list view with categories
+- **Product Details** - Images, ratings, add to cart
+- **Shopping Cart** - Quantity management, item removal
+- **Wishlist** - Save products for later
 
-Inspiration gallery
+### 💳 Checkout Process
+- **Shipping Information** - Address and contact details
+- **Payment Method** - COD, bKash, or Nagad
+- **Order Review** - Final confirmation before purchase
+- **Order Success** - Confirmation with tracking details
 
-🛒 Shopping Experience
-Product Catalog - Grid/list view with categories
+### 📱 Responsive Design
+- Mobile-first approach
+- Tablet and desktop optimizations
+- Touch-friendly interfaces
+- Fast loading on all devices
 
-Product Details - Images, ratings, add to cart
+## 🔧 Configuration
 
-Shopping Cart - Quantity management, item removal
+### Environment Variables
 
-Wishlist - Save products for later
+Create a `.env.local` file for environment variables:
 
-💳 Checkout Process
-Shipping Information - Address and contact details
-
-Payment Method - COD, bKash, or Nagad
-
-Order Review - Final confirmation before purchase
-
-Order Success - Confirmation with tracking details
-
-📱 Responsive Design
-Mobile-first approach
-
-Tablet and desktop optimizations
-
-Touch-friendly interfaces
-
-Fast loading on all devices
-
-🔧 Configuration
-Environment Variables
-Create a .env.local file for environment variables:
-
-env
+```env
 # Next.js Configuration
 NEXT_PUBLIC_SITE_URL=https://your-domain.netlify.app
 NEXT_PUBLIC_APP_NAME=Kosi Furniture
 
 # API Endpoints (for future integration)
 NEXT_PUBLIC_API_URL=your-api-url
-Customization
-Colors: Update tailwind.config.js for brand colors
+```
 
-Fonts: Modify layout.tsx for custom fonts
+### Customization
+- **Colors**: Update `tailwind.config.js` for brand colors
+- **Fonts**: Modify `layout.tsx` for custom fonts
+- **Content**: Edit mock data in `lib/mock-data.ts`
+- **SEO**: Update metadata in layout and pages
 
-Content: Edit mock data in lib/mock-data.ts
+## 🚀 Deployment
 
-SEO: Update metadata in layout and pages
+### Netlify (Recommended)
+1. Connect your GitHub repository to Netlify
+2. Set build command: `pnpm build`
+3. Set publish directory: `.next`
+4. Deploy!
 
-🚀 Deployment
-Netlify (Recommended)
-Connect your GitHub repository to Netlify
+### Vercel
+1. Import project from GitHub
+2. Vercel automatically detects Next.js
+3. Deploy with zero configuration
 
-Set build command: pnpm build
-
-Set publish directory: .next
-
-Deploy!
-
-Vercel
-Import project from GitHub
-
-Vercel automatically detects Next.js
-
-Deploy with zero configuration
-
-Other Platforms
+### Other Platforms
 The project can be deployed on any platform that supports Next.js:
+- AWS Amplify
+- Railway
+- Digital Ocean App Platform
+- Heroku (with buildpack)
 
-AWS Amplify
+## 🤝 Contributing
 
-Railway
-
-Digital Ocean App Platform
-
-Heroku (with buildpack)
-
-🤝 Contributing
 We welcome contributions! Please feel free to submit issues, feature requests, or pull requests.
 
-Development Workflow
-Fork the repository
+### Development Workflow
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
-Create a feature branch (git checkout -b feature/amazing-feature)
+### Code Standards
+- Use TypeScript for type safety
+- Follow Tailwind CSS class ordering
+- Write meaningful commit messages
+- Test responsive design on multiple devices
 
-Commit your changes (git commit -m 'Add amazing feature')
+## 📄 License
 
-Push to the branch (git push origin feature/amazing-feature)
-
-Open a Pull Request
-
-Code Standards
-Use TypeScript for type safety
-
-Follow Tailwind CSS class ordering
-
-Write meaningful commit messages
-
-Test responsive design on multiple devices
-
-📄 License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-👥 Team
-Built with ❤️ by BebsharDost
+## 👥 Team
 
-Agency: BebsharDost - Your Digital Dost
+Built with ❤️ by **BebsharDost**
+
+**Agency**: BebsharDost - Your Digital Dost  
 Specializing in: Modern web applications, e-commerce solutions, and digital experiences.
 
-🙏 Acknowledgments
-Next.js team for the amazing framework
+## 🙏 Acknowledgments
 
-Tailwind CSS for the utility-first CSS
+- Next.js team for the amazing framework
+- Tailwind CSS for the utility-first CSS
+- Lucide for the beautiful icons
+- Zustand for simple state management
 
-Lucide for the beautiful icons
-
-Zustand for simple state management
+---
 
 <div align="center">
+
 ⭐ Star this repo if you found it helpful!
 
-https://img.shields.io/github/stars/bebshardost/kosi-furniture-store?style=social
-https://img.shields.io/github/forks/bebshardost/kosi-furniture-store?style=social
+![GitHub stars](https://img.shields.io/github/stars/bebshardost/kosi-furniture-store?style=social)
+![GitHub forks](https://img.shields.io/github/forks/bebshardost/kosi-furniture-store?style=social)
 
-</div> ```
+</div>
