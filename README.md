@@ -1,36 +1,252 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🛋️ Kosi Furniture Store - Premium E-commerce Platform
 
-## Getting Started
+![Kosi Furniture Banner](https://i.ibb.co.com/PZhnWFYB/kosii-banner.png)
 
-First, run the development server:
+A modern, responsive furniture e-commerce platform built with Next.js 15, featuring a seamless shopping experience with cart functionality, checkout process, and multiple payment options.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
+[![Next.js](https://img.shields.io/badge/Next.js-15.0-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.7-blue?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind-CSS-38B2AC?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com/)
+
+## ✨ Features
+
+### 🛒 E-commerce Functionality
+- **Shopping Cart** - Add, remove, and manage items with real-time updates
+- **Checkout Process** - Multi-step checkout with form validation
+- **Payment Options** - Support for COD, bKash, and Nagad payments
+- **Order Management** - Order confirmation and tracking system
+
+### 🎨 Modern Design
+- **Responsive Design** - Mobile-first approach with Tailwind CSS
+- **Smooth Animations** - Framer Motion inspired transitions
+- **Modern UI/UX** - Clean, elegant interface with premium feel
+- **Dark/Light Mode Ready** - Built with theming in mind
+
+### ⚡ Performance & SEO
+- **Next.js 15** - Latest App Router with React 18
+- **TypeScript** - Full type safety and better developer experience
+- **SEO Optimized** - Meta tags, sitemap, and structured data
+- **Image Optimization** - Next.js Image component with lazy loading
+
+### 🔧 Developer Experience
+- **Zustand** - Lightweight state management
+- **Lucide React** - Beautiful, tree-shakeable icons
+- **PNPM** - Fast, disk space efficient package manager
+- **ESLint & Prettier** - Code quality and formatting
+
+## 🚀 Live Demo
+
+🌐 **Live Site**: [https://kosii.netlify.app](https://kosii.netlify.app)
+
+## 📸 Screenshots
+
+| Homepage | Product Gallery | Shopping Cart |
+|----------|-----------------|---------------|
+| ![Homepage](https://i.ibb.co.com/PZhnWFYB/kosii-banner.png) | ![Products](https://i.ibb.co.com/TMwg1P3S/kosii-products.png) | ![Cart](https://i.ibb.co.com/1t5ncCPP/kosii-cart.png) |
+
+| Checkout | Order Success | Mobile View |
+|----------|---------------|-------------|
+| ![Checkout](https://via.placeholder.com/400x250/2B303A/FFFFFF?text=Checkout) | ![Success](https://i.ibb.co.com/HpK14HcP/kosii-success.png) | ![Mobile](https://i.ibb.co.com/d0sVCsmb/kosii-mobile.png) |
+
+## 🛠️ Tech Stack
+
+**Frontend Framework**
+- [Next.js 15](https://nextjs.org/) - React framework with App Router
+- [React 18](https://reactjs.org/) - UI library with latest features
+- [TypeScript](https://www.typescriptlang.org/) - Type safety and better DX
+
+**Styling & UI**
+- [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS framework
+- [Lucide React](https://lucide.dev/) - Beautiful SVG icons
+
+**State Management**
+- [Zustand](https://github.com/pmndrs/zustand) - Lightweight state management
+
+**Development Tools**
+- [PNPM](https://pnpm.io/) - Fast, disk space efficient package manager
+- [ESLint](https://eslint.org/) - Code linting and quality
+- [PostCSS](https://postcss.org/) - CSS processing
+
+## 📦 Installation
+
+### Prerequisites
+- Node.js 18.17 or later
+- PNPM (recommended) or npm
+
+### Quick Start
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/your-username/kosi-furniture.git
+   cd kosi-furniture
+Install dependencies
+
+bash
+pnpm install
+Run the development server
+
+bash
 pnpm dev
-# or
-bun dev
-```
+Open your browser
+Navigate to http://localhost:3000
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Build for Production
+bash
+# Build the application
+pnpm build
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+# Start production server
+pnpm start
+🏗️ Project Structure
+text
+kosi-furniture/
+├── app/                    # Next.js 15 App Router
+│   ├── cart/              # Cart page
+│   ├── checkout/          # Checkout process
+│   ├── order-success/     # Order confirmation
+│   └── layout.tsx         # Root layout
+├── components/
+│   ├── layouts/           # Header, Footer
+│   ├── pages/             # Page components
+│   ├── sections/          # Homepage sections
+│   └── ui/                # Reusable UI components
+├── lib/
+│   ├── store/             # Zustand stores
+│   └── mock-data.ts       # Sample product data
+├── public/                # Static assets
+└── types/                 # TypeScript type definitions
+🎯 Key Pages & Features
+🏠 Homepage
+Hero section with featured products
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Top picks with filtering and sorting
 
-## Learn More
+New arrivals showcase
 
-To learn more about Next.js, take a look at the following resources:
+Feature highlights
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Inspiration gallery
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+🛒 Shopping Experience
+Product Catalog - Grid/list view with categories
 
-## Deploy on Vercel
+Product Details - Images, ratings, add to cart
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Shopping Cart - Quantity management, item removal
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Wishlist - Save products for later
+
+💳 Checkout Process
+Shipping Information - Address and contact details
+
+Payment Method - COD, bKash, or Nagad
+
+Order Review - Final confirmation before purchase
+
+Order Success - Confirmation with tracking details
+
+📱 Responsive Design
+Mobile-first approach
+
+Tablet and desktop optimizations
+
+Touch-friendly interfaces
+
+Fast loading on all devices
+
+🔧 Configuration
+Environment Variables
+Create a .env.local file for environment variables:
+
+env
+# Next.js Configuration
+NEXT_PUBLIC_SITE_URL=https://your-domain.netlify.app
+NEXT_PUBLIC_APP_NAME=Kosi Furniture
+
+# API Endpoints (for future integration)
+NEXT_PUBLIC_API_URL=your-api-url
+Customization
+Colors: Update tailwind.config.js for brand colors
+
+Fonts: Modify layout.tsx for custom fonts
+
+Content: Edit mock data in lib/mock-data.ts
+
+SEO: Update metadata in layout and pages
+
+🚀 Deployment
+Netlify (Recommended)
+Connect your GitHub repository to Netlify
+
+Set build command: pnpm build
+
+Set publish directory: .next
+
+Deploy!
+
+Vercel
+Import project from GitHub
+
+Vercel automatically detects Next.js
+
+Deploy with zero configuration
+
+Other Platforms
+The project can be deployed on any platform that supports Next.js:
+
+AWS Amplify
+
+Railway
+
+Digital Ocean App Platform
+
+Heroku (with buildpack)
+
+🤝 Contributing
+We welcome contributions! Please feel free to submit issues, feature requests, or pull requests.
+
+Development Workflow
+Fork the repository
+
+Create a feature branch (git checkout -b feature/amazing-feature)
+
+Commit your changes (git commit -m 'Add amazing feature')
+
+Push to the branch (git push origin feature/amazing-feature)
+
+Open a Pull Request
+
+Code Standards
+Use TypeScript for type safety
+
+Follow Tailwind CSS class ordering
+
+Write meaningful commit messages
+
+Test responsive design on multiple devices
+
+📄 License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+👥 Team
+Built with ❤️ by BebsharDost
+
+Agency: BebsharDost - Your Digital Dost
+Specializing in: Modern web applications, e-commerce solutions, and digital experiences.
+
+🙏 Acknowledgments
+Next.js team for the amazing framework
+
+Tailwind CSS for the utility-first CSS
+
+Lucide for the beautiful icons
+
+Zustand for simple state management
+
+<div align="center">
+⭐ Star this repo if you found it helpful!
+
+https://img.shields.io/github/stars/bebshardost/kosi-furniture-store?style=social
+https://img.shields.io/github/forks/bebshardost/kosi-furniture-store?style=social
+
+</div> ```
