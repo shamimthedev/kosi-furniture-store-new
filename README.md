@@ -2,7 +2,7 @@
 
 # 🛋️ Kosi Furniture Store - Premium E-commerce Platform
 
-![Kosi Furniture Banner](https://i.ibb.co.com/PZhnWFYB/kosii-banner.png)
+![Kosi Furniture Banner](.github/screenshots/kosii-banner.png)
 
 A modern, responsive furniture e-commerce platform built with Next.js 15, featuring a seamless shopping experience with cart functionality, checkout process, and multiple payment options.
 
@@ -44,11 +44,11 @@ A modern, responsive furniture e-commerce platform built with Next.js 15, featur
 
 | Homepage | Product Gallery | Shopping Cart |
 |----------|-----------------|---------------|
-| ![Homepage](https://i.ibb.co.com/PZhnWFYB/kosii-banner.png) | ![Products](https://i.ibb.co.com/TMwg1P3S/kosii-products.png) | ![Cart](https://i.ibb.co.com/1t5ncCPP/kosii-cart.png) |
+| ![Homepage](.github/screenshots/kosii-banner.png) | ![Products](.github/screenshots/kosii-products.png) | ![Cart](.github/screenshots/kosii-cart.png) |
 
 | Checkout | Order Success | Mobile View |
 |----------|---------------|-------------|
-| ![Checkout](https://i.ibb.co.com/kV1KfsS8/kosii-checkout.png) | ![Success](https://i.ibb.co.com/KjjfTGtg/kosii-success.png) | ![Mobile](https://i.ibb.co.com/PGGTNSTY/kosii-mobile.png) |
+| ![Checkout](.github/screenshots/kosii-checkout.png) | ![Success](.github/screenshots/kosii-success.png) | ![Mobile](.github/screenshots/kosii-mobile.png) |
 
 ## 🛠️ Tech Stack
 
@@ -109,7 +109,7 @@ pnpm start
 ## 🗂️ Project Structure
 
 ```
-kosi-furniture/
+kosi-furniture-store/
 ├── app/                    # Next.js 15 App Router
 │   ├── cart/              # Cart page
 │   ├── checkout/          # Checkout process
