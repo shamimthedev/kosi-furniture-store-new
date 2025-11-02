@@ -29,7 +29,7 @@
   }
   
   .animated-name:hover {
-    color: #D59D6D; /* secondary color */
+    color: #FF4B37; 
     transform: translateY(-1px);
   }
   
@@ -40,7 +40,7 @@
     height: 2px;
     bottom: -2px;
     left: 0;
-    background-color: #D59D6D; /* secondary color */
+    background-color: #FF4B37; 
     transition: width 0.3s ease;
   }
   
