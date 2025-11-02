@@ -1,3 +1,5 @@
+> 💼 A project by [BebsharDost](https://bebshardost.com) - Your Digital Dost
+
 # 🛋️ Kosi Furniture Store - Premium E-commerce Platform
 
 ![Kosi Furniture Banner](https://i.ibb.co.com/PZhnWFYB/kosii-banner.png)
@@ -216,10 +218,13 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## 👥 Team
 
-Built with ❤️ by **BebsharDost**
+Built with ❤️ by **[BebsharDost](https://bebshardost.com)**
 
-**Agency**: BebsharDost - Your Digital Dost  
+**Agency**: [BebsharDost](https://bebshardost.com) - Your Digital Dost  
 Specializing in: Modern web applications, e-commerce solutions, and digital experiences.
+
+📧 **Contact**: [bebshardost@gmail.com](mailto:bebshardost@gmail.com) 
+🌐 **Website**: [bebshardost.com](https://bebshardost.com)
 
 ## 🙏 Acknowledgments
 
