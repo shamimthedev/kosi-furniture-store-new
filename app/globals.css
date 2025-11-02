@@ -21,52 +21,30 @@
   }
 }
 
-/* --- Footer Agency Name Animation (Readable on White) --- */
-
-.animated-name {
-  @apply inline-block font-bold relative cursor-pointer;
-  /* Fallback visible color */
-  color: theme('colors.secondary');
-  background-image: linear-gradient(
-    to right,
-    theme('colors.secondary'),
-    #B47E4E,
-    theme('colors.secondary')
-  );
-  background-size: 300% 300%;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; /* makes gradient visible */
-  transition: all 0.4s ease;
-}
-
-/* ✨ Gradient shimmer only on md+ screens */
-@media (min-width: 768px) {
+/* --- Footer Agency Name Animation --- */
+@layer utilities {
   .animated-name {
-    animation: gradientMove 3s ease-in-out infinite alternate;
+    position: relative;
+    transition: all 0.3s ease;
   }
-}
-
-/* 🧡 Hover underline + color transition */
-.animated-name::after {
-  content: '';
-  @apply absolute left-0 bottom-0 w-0 h-[2px] bg-secondary transition-all duration-500;
-}
-
-.animated-name:hover::after {
-  @apply w-full;
-}
-
-.animated-name:hover {
-  color: theme('colors.productPrice'); /* visible hover fallback */
-  -webkit-text-fill-color: theme('colors.productPrice'); /* ensures red on hover */
-}
-
-@keyframes gradientMove {
-  0% {
-    background-position: 0% 50%;
+  
+  .animated-name:hover {
+    color: #D59D6D; /* secondary color */
+    transform: translateY(-1px);
   }
-  100% {
-    background-position: 100% 50%;
+  
+  .animated-name::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: #D59D6D; /* secondary color */
+    transition: width 0.3s ease;
+  }
+  
+  .animated-name:hover::after {
+    width: 100%;
   }
 }

@@ -134,8 +134,8 @@ export default function Footer() {
                                             type="submit"
                                             disabled={isSubscribed}
                                             className={`absolute right-2 top-1/2 transform -translate-y-1/2 p-2 rounded-md transition-all duration-200 ${isSubscribed
-                                                    ? 'bg-green-500 text-white'
-                                                    : 'bg-primary hover:bg-primary/90 text-white hover:scale-105'
+                                                ? 'bg-green-500 text-white'
+                                                : 'bg-primary hover:bg-primary/90 text-white hover:scale-105'
                                                 }`}
                                         >
                                             {isSubscribed ? (
@@ -315,20 +315,20 @@ export default function Footer() {
                 {/* Bottom Footer */}
                 <div className="py-6 border-t border-gray-200">
                     <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-                        <div className="flex items-center gap-2 text-gray-600 text-sm">
-                            <span>© 2024 Kosi Furniture. Made with</span>
-                            <Heart className="w-4 h-4 text-red-500 fill-current" />
-                            <span>
-                                by{' '}
-                                <Link
-                                    href="https://bebshardost.com"
-                                    className="animated-name"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-                                    BebsharDost
-                                </Link>
-                            </span>
+
+                        <div className="flex items-center justify-center gap-2 text-gray-600 text-sm">
+                            <span>© 2024 Kosi Furniture. Crafted with</span>
+                            <Heart className="w-4 h-4 text-red-500 fill-current animate-pulse" />
+                            <span>by</span>
+                            <Link
+                                href="https://bebshardost.com"
+                                className="font-semibold text-primary hover:text-secondary transition-colors duration-200 relative group"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                BebsharDost
+                                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-secondary transition-all duration-300 group-hover:w-full"></span>
+                            </Link>
                         </div>
 
                         <div className="flex items-center gap-8 text-sm">
